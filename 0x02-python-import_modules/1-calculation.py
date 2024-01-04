@@ -1,15 +1,21 @@
 #!/usr/bin/python3
 from calculator_1 import add, sub, mul, div
 
-a = 10
-b = 5
+def main():
+    a = 10
+    b = 5
 
-result_add = add(a, b)
-result_sub = sub(a, b)
-result_mul = mul(a, b)
-result_div = div(a, b)
+    sum_ab = add(a, b)
+    print(f"{a} + {b} = {sum_ab}")
 
-print("{} + {} = {}".format(a, b, result_add))
-print("{} - {} = {}".format(a, b, result_sub))
-print("{} * {} = {}".format(a, b, result_mul))
-print("{} / {} = {}".format(a, b, result_div))
+    diff_ab = sub(a, b)
+    print(f"{a} - {b} = {diff_ab}")
+
+    prod_ab = mul(a, b)
+    print(f"{a} * {b} = {prod_ab}")
+
+    quot_ab = div(a, b)
+    print(f"{a} / {b} = {quot_ab}")
+
+if __name__ == "__main__":
+    main()
